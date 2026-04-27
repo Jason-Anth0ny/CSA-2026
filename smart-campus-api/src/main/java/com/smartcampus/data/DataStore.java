@@ -1,0 +1,16 @@
+package com.smartcampus.data;
+
+import com.smartcampus.models.Room;
+import com.smartcampus.models.Sensor;
+import com.smartcampus.models.SensorReading;
+
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class DataStore {
+        public static final Map<String, Room> rooms = new ConcurrentHashMap<>();
+        public static final Map<String, Sensor> sensors = new ConcurrentHashMap<>();
+        public static final Map<String, List<SensorReading>> readings = new ConcurrentHashMap<>();
+    }
+

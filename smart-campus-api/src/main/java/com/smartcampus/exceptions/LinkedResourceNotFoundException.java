@@ -1,0 +1,13 @@
+package com.smartcampus.exceptions;
+
+public class LinkedResourceNotFoundException extends RuntimeException{
+    private final String roomId;
+    public LinkedResourceNotFoundException(String roomId) {
+        super("The room you have requested does not exist");
+        this.roomId = roomId;
+    }
+
+    public String getRoomId(){
+        return roomId;
+    }
+}
