@@ -9,7 +9,7 @@ import jakarta.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.Map;
 
-@Path("discover")
+@Path("")
 public class Discovery {
 
     @GET
